@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{48D6EF5E-9A73-4822-B45C-8200A0B4A23B}</ProjectGuid>
+    <RootNamespace>QuestMainApp</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.23107.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>false</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\;IPCameraSDK\Inc\;Kernel\Inc\;Arduino\Inc\;Tenvis\Inc\;HTTP_Devices\Inc\;Security\Inc\;Debug_Devices\Inc\;ThirdParty\CURL\Includes;ThirdParty\DropBox\Includes;C:\Qt\5.8\msvc2015\include;C:\Qt\5.8\msvc2015\include\QtNetwork;C:\Qt\5.8\msvc2015\include\QtCore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>CURL_STATICLIB;WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>Wldap32.lib;ThirdParty\CURL\libcurld.lib;ThirdParty\DropBox\dropboxQtd.lib;ThirdParty\OpenSSL\libeay32MTd.lib;ThirdParty\OpenSSL\ssleay32MTd.lib;C:\Qt\5.8\msvc2015\lib\Qt5Networkd.lib;C:\Qt\5.8\msvc2015\lib\Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>false</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\;IPCameraSDK\Inc\;Kernel\Inc\;Arduino\Inc\;Tenvis\Inc\;HTTP_Devices\Inc\;Security\Inc\;Debug_Devices\Inc\;ThirdParty\CURL\Includes;ThirdParty\DropBox\Includes;C:\Qt\5.8\msvc2015\include;C:\Qt\5.8\msvc2015\include\QtNetwork;C:\Qt\5.8\msvc2015\include\QtCore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>CURL_STATICLIB;WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>Wldap32.lib;ThirdParty\CURL\libcurl.lib;ThirdParty\DropBox\dropboxQt.lib;ThirdParty\OpenSSL\libeay32MT.lib;ThirdParty\OpenSSL\ssleay32MT.lib;C:\Qt\5.8\msvc2015\lib\Qt5Network.lib;C:\Qt\5.8\msvc2015\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Arduino\Src\ArduinoDevice.cpp" />
+    <ClCompile Include="Arduino\Src\ArduinoExecuter.cpp" />
+    <ClCompile Include="Arduino\Src\ArduinoSensor.cpp" />
+    <ClCompile Include="CURLDownloaderLight.cpp" />
+    <ClCompile Include="Debug_Devices\Src\DebugDevice.cpp" />
+    <ClCompile Include="Debug_Devices\Src\OutputWindowExecuter.cpp" />
+    <ClCompile Include="DropBoxAccessor.cpp" />
+    <ClCompile Include="HTTP_Devices\Src\HTTPGetExecuter.cpp" />
+    <ClCompile Include="HTTP_Devices\Src\HTTPGetSensor.cpp" />
+    <ClCompile Include="IPCameraSDK\Src\ipcam.cpp" />
+    <ClCompile Include="Kernel\Src\QuestContextExecuter.cpp" />
+    <ClCompile Include="Kernel\Src\QuestControlExecuter.cpp" />
+    <ClCompile Include="Kernel\Src\QuestLogExecuter.cpp" />
+    <ClCompile Include="Kernel\Src\QuestPenalizationExecuter.cpp" />
+    <ClCompile Include="Kernel\Src\QuestRemoteDevice.cpp" />
+    <ClCompile Include="Kernel\Src\QuestRemoteDevicesManager.cpp" />
+    <ClCompile Include="Kernel\Src\QuestRemoteExecuter.cpp" />
+    <ClCompile Include="Kernel\Src\QuestRemoteSensor.cpp" />
+    <ClCompile Include="Kernel\Src\QuestScenariosManager.cpp" />
+    <ClCompile Include="Kernel\Src\QuestServer.cpp" />
+    <ClCompile Include="Kernel\Src\QuestTimeDevice.cpp" />
+    <ClCompile Include="memStream.cpp" />
+    <ClCompile Include="MyRichEdit.cpp" />
+    <ClCompile Include="QuestMainApp.cpp" />
+    <ClCompile Include="QuestMainAppDlg.cpp" />
+    <ClCompile Include="QuestMainAppLowControlDlg.cpp" />
+    <ClCompile Include="QuestMainAppNumPlayersDlg.cpp" />
+    <ClCompile Include="QuestMainAppOutputWindowDlg.cpp" />
+    <ClCompile Include="QuestMainAppPropSheet.cpp" />
+    <ClCompile Include="QuestMainAppScenariosControlDlg.cpp" />
+    <ClCompile Include="QuestMainAppSecurityCheckDlg.cpp" />
+    <ClCompile Include="Security\Src\check_security.cpp" />
+    <ClCompile Include="Security\Src\reg_helper.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Tenvis\Src\TenvisIPCamExecuter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Arduino\Inc\ArduinoDevice.h" />
+    <ClInclude Include="Arduino\Inc\ArduinoExecuter.h" />
+    <ClInclude Include="Arduino\Inc\ArduinoSensor.h" />
+    <ClInclude Include="CURLDownloaderLight.h" />
+    <ClInclude Include="Debug_Devices\Inc\DebugDevice.h" />
+    <ClInclude Include="Debug_Devices\Inc\OutputWindowExecuter.h" />
+    <ClInclude Include="DropBoxAccessor.h" />
+    <ClInclude Include="HTTP_Devices\Inc\HTTPGetExecuter.h" />
+    <ClInclude Include="HTTP_Devices\Inc\HTTPGetSensor.h" />
+    <ClInclude Include="IPCameraSDK\Inc\ipcam.h" />
+    <ClInclude Include="Kernel\Inc\QuestCommon.h" />
+    <ClInclude Include="Kernel\Inc\QuestContextExecuter.h" />
+    <ClInclude Include="Kernel\Inc\QuestControlExecuter.h" />
+    <ClInclude Include="Kernel\Inc\QuestLogExecuter.h" />
+    <ClInclude Include="Kernel\Inc\QuestPenalizationExecuter.h" />
+    <ClInclude Include="Kernel\Inc\QuestRemoteDevice.h" />
+    <ClInclude Include="Kernel\Inc\QuestRemoteDevicesManager.h" />
+    <ClInclude Include="Kernel\Inc\QuestRemoteExecuter.h" />
+    <ClInclude Include="Kernel\Inc\QuestRemoteSensor.h" />
+    <ClInclude Include="Kernel\Inc\QuestScenariosManager.h" />
+    <ClInclude Include="Kernel\Inc\QuestServer.h" />
+    <ClInclude Include="Kernel\Inc\QuestTimeDevice.h" />
+    <ClInclude Include="memStream.h" />
+    <ClInclude Include="MyRichEdit.h" />
+    <ClInclude Include="QuestMainApp.h" />
+    <ClInclude Include="QuestMainAppDlg.h" />
+    <ClInclude Include="QuestMainAppLowControlDlg.h" />
+    <ClInclude Include="QuestMainAppNumPlayersDlg.h" />
+    <ClInclude Include="QuestMainAppOutputWindowDlg.h" />
+    <ClInclude Include="QuestMainAppPropSheet.h" />
+    <ClInclude Include="QuestMainAppScenariosControlDlg.h" />
+    <ClInclude Include="QuestMainAppSecurityCheckDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Security\Inc\check_security.h" />
+    <ClInclude Include="Security\Inc\reg_helper.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Tenvis\Inc\TenvisIPCamExecuter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\LockClosed.bmp" />
+    <Image Include="res\LockOpened.bmp" />
+    <Image Include="res\QuestMainApp.ico" />
+    <Image Include="res\Tuning.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="QuestMainApp.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\QuestMainApp.rc2" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="QuestMainApp.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

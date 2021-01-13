@@ -1,0 +1,340 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Русский (Россия) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)\r\n"
+    "LANGUAGE 25, 1\r\n"
+    "#pragma code_page(1251)\r\n"
+    "#include ""res\\QuestMainApp.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\QuestMainApp.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_QUESTMAINAPP_DIALOG DIALOGEX 0, 0, 451, 323
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_STATICEDGE | WS_EX_APPWINDOW
+CAPTION "Программа управления"
+FONT 8, "Franklin Gothic Medium", 700, 1, 0xCC
+BEGIN
+    PUSHBUTTON      "Запустить систему",IDC_START_SYSTEM_BUTTON,335,6,96,21,0,WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+    PUSHBUTTON      "",IDC_CHECK_SYSTEM_BUTTON,335,30,96,21,0,WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+    CONTROL         "Уровень ""Эксперт""",IDC_EXPERT_LEVEL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,338,53,92,11
+    PUSHBUTTON      "",IDC_ACTIVATE_SYSTEM_BUTTON,335,65,96,21,0,WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+    PUSHBUTTON      "Деактивировать систему",IDC_DEACTIVATE_SYSTEM_BUTTON,335,88,96,21,0,WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+    PUSHBUTTON      "Завершить программу",IDCANCEL,335,112,96,21,0,WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+    PUSHBUTTON      "Пауза системы",IDC_PAUSE_SYSTEM_BUTTON,335,135,96,21,0,WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+    PUSHBUTTON      "Снять паузу системы",IDC_RESUME_SYSTEM_BUTTON,335,159,96,21,0,WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+    CONTROL         "",IDC_TIMER_WINDOW,"RICHEDIT",TCS_RAGGEDRIGHT | TCS_MULTISELECT | WS_DISABLED | WS_BORDER,335,184,98,25
+    CONTROL         IDB_LOCK_OPENED_BITMAP,IDC_STATIC_PICTURE,"Static",SS_BITMAP | SS_REALSIZEIMAGE | SS_SUNKEN | WS_BORDER,337,213,77,72,WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    CONTROL         "Расширенное логирование",IDC_EXTENDED_LOG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,338,306,105,11
+    CTEXT           "",IDC_QUEST_NAME,12,6,306,10,WS_BORDER,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_MAIN_OUTPUT_WINDOW,12,33,306,283,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_QUESTMAINAPPLOWCONTROL_DIALOG DIALOGEX 0, 0, 450, 310
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_STATICEDGE | WS_EX_APPWINDOW
+CAPTION "Ручное управление"
+FONT 8, "Franklin Gothic Medium", 700, 0, 0xCC
+BEGIN
+    CONTROL         IDB_TUNING_BITMAP,IDC_STATIC_PICTURE2,"Static",SS_BITMAP | SS_REALSIZEIMAGE | SS_SUNKEN | WS_BORDER,113,4,200,70,WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    CTEXT           "Исполняющие устройства",IDC_STATIC,20,98,121,14
+    CTEXT           "Параметр исполнения",IDC_STATIC,139,98,131,11
+    COMBOBOX        IDC_EXECUTER_COMBO,18,119,130,80,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP,WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+    EDITTEXT        IDC_EXECUTER_PARAMETER,163,119,90,15,ES_AUTOHSCROLL,WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+    PUSHBUTTON      "Выполнить",IDC_EXECUTE_BUTTON,276,119,90,15,0,WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+    PUSHBUTTON      "Отключить устройство",IDC_DISABLE_EXECUTER_BUTTON,18,144,130,15,0,WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+    PUSHBUTTON      "Включить устройство",IDC_ENABLE_EXECUTER_BUTTON,162,144,130,15,0,WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+    EDITTEXT        IDC_EXECUTER_ON_OFF_STATE,308,144,112,15,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY,WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+    CTEXT           "Сенсоры",IDC_STATIC,23,174,118,11
+    CTEXT           "Текущее состояние",IDC_STATIC,159,174,87,8
+    CTEXT           "Новое состояние",IDC_STATIC,248,174,87,8
+    CTEXT           "Значение",IDC_STATIC,323,174,51,8
+    COMBOBOX        IDC_SENSOR_COMBO,18,192,129,50,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP,WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+    EDITTEXT        IDC_SENSOR_STATE_EDIT,161,192,90,15,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY,WS_EX_DLGMODALFRAME | WS_EX_RIGHT | WS_EX_STATICEDGE
+    COMBOBOX        IDC_SENSOR_STATE_COMBO,259,192,67,50,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP,WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+    EDITTEXT        IDC_SENSOR_VALUE_EDIT,331,192,36,15,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+    PUSHBUTTON      "Установить",IDC_SET_STATE_BUTTON,376,192,55,15,0,WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+    PUSHBUTTON      "Включить программную эмуляцию",IDC_EMULATION_ON_BUTTON,18,217,130,15,0,WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+    PUSHBUTTON      "Отключить программную эмуляцию",IDC_EMULATION_OFF_BUTTON,161,217,130,15,0,WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+    EDITTEXT        IDC_SENSOR_ON_OFF_STATE,308,217,112,15,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY,WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+    CTEXT           "Прибавить время (сек.)",IDC_STATIC,43,252,121,14
+    CTEXT           "Уменьшить время (сек.)",IDC_STATIC,258,252,121,14
+    EDITTEXT        IDC_INC_TIME_EDIT,23,274,90,15,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+    PUSHBUTTON      "Применить",IDC_SET_TIME_INC_BUTTON,132,274,55,15,0,WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+    EDITTEXT        IDC_DEC_TIME_EDIT,247,274,90,15,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+    PUSHBUTTON      "Применить",IDC_SET_TIME_DEC_BUTTON,356,274,55,15,0,WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+    GROUPBOX        "",IDC_STATIC,7,93,439,71
+    GROUPBOX        "",IDC_STATIC,7,168,439,71
+    GROUPBOX        "",IDC_STATIC,7,243,439,61
+END
+
+IDD_QUESTMAINAPPSCENARIOSCONTROL_DIALOG DIALOGEX 0, 0, 450, 310
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_STATICEDGE | WS_EX_APPWINDOW
+CAPTION "Управление сценариями"
+FONT 8, "Franklin Gothic Medium", 700, 0, 0xCC
+BEGIN
+END
+
+IDD_QUESTMAINAPPSECURITY_DIALOG DIALOGEX 0, 0, 75, 21
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_STATICEDGE | WS_EX_APPWINDOW
+CAPTION "Введите код активации"
+FONT 24, "Franklin Gothic Medium", 700, 0, 0xCC
+BEGIN
+    EDITTEXT        IDC_SECURITY_CODE_EDIT,2,5,41,12,ES_PASSWORD
+    DEFPUSHBUTTON   "OK",IDOK,48,2,24,8
+    PUSHBUTTON      "Cancel",IDCANCEL,48,11,24,8
+END
+
+IDD_QUESTMAINAPPNUMPLAYERS_DIALOG DIALOGEX 0, 0, 73, 27
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_STATICEDGE | WS_EX_APPWINDOW
+CAPTION "Введите количество игроков"
+FONT 24, "Franklin Gothic Medium", 700, 0, 0xCC
+BEGIN
+    EDITTEXT        IDC_NUM_PLAYERS_EDIT,7,3,59,12,ES_NUMBER
+    DEFPUSHBUTTON   "OK",IDOK,7,18,27,7
+    PUSHBUTTON      "Cancel",IDCANCEL,39,18,27,7
+END
+
+IDD_QUESTMAINAPP_OUPUT_DIALOG DIALOGEX 0, 0, 62, 11
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_STATICEDGE | WS_EX_APPWINDOW
+CAPTION "Output window"
+FONT 24, "Franklin Gothic Medium", 700, 0, 0xCC
+BEGIN
+    CTEXT           "",IDC_OUTPUT_WINDOW_TEXT,1,1,59,8
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "QuestSoftware"
+            VALUE "FileDescription", "Quest Control Application"
+            VALUE "FileVersion", "1.0.0.3"
+            VALUE "InternalName", "QuestMainApp.exe"
+            VALUE "LegalCopyright", "Victor Kunitsyn (c) 2018.  All rights reserved."
+            VALUE "OriginalFilename", "QuestMainApp.exe"
+            VALUE "ProductName", "Quest Control Application"
+            VALUE "ProductVersion", "1.0.0.3"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_QUESTMAINAPP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 444
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 316
+    END
+
+    IDD_QUESTMAINAPPLOWCONTROL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 446
+        TOPMARGIN, 7
+    END
+
+    IDD_QUESTMAINAPPSCENARIOSCONTROL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 440
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 302
+    END
+
+    IDD_QUESTMAINAPPSECURITY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 68
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 14
+    END
+
+    IDD_QUESTMAINAPPNUMPLAYERS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 66
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 25
+    END
+
+    IDD_QUESTMAINAPP_OUPUT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 60
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 9
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_LOCK_CLOSED_BITMAP  BITMAP                  "res\\LockClosed.bmp"
+
+IDB_LOCK_OPENED_BITMAP  BITMAP                  "res\\LockOpened.bmp"
+
+IDB_TUNING_BITMAP       BITMAP                  "res\\Tuning.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_QUESTMAINAPP_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_QUESTMAINAPPLOWCONTROL_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_QUESTMAINAPPSCENARIOSCONTROL_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_QUESTMAINAPPSECURITY_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+#endif    // Русский (Россия) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE 25, 1
+#pragma code_page(1251)
+#include "res\QuestMainApp.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
